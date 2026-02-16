@@ -58,5 +58,18 @@
     "image": "images/menu-06.jpg",
     "status": "published",
     "order": 6
+  },
+  {
+    "id": "mlpbb3riqj2s",
+    "status": "published",
+    "createdAt": "2026-02-16T15:11:27.438Z",
+    "updatedAt": "2026-02-16T15:11:27.438Z",
+    "title": "天丼",
+    "name": "天丼",
+    "price": 1200,
+    "features": [
+      "大きな海老をまるまる二匹！ボリューム満点"
+    ],
+    "image": "images/menu/1771254685833-img-1771254656979.webp"
   }
 ]
