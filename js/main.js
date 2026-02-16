@@ -1,5 +1,11 @@
 // メインJS: スクロールアニメーション、ヘッダー制御、動的コンテンツ
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  // --- Store Init (JSON fetch) ---
+  const inits = [];
+  if (typeof NewsStore !== 'undefined' && NewsStore.init) inits.push(NewsStore.init());
+  if (typeof MenuStore !== 'undefined' && MenuStore.init) inits.push(MenuStore.init());
+  await Promise.all(inits);
+
   // --- Scroll Header ---
   const header = document.querySelector('.header');
   if (header) {

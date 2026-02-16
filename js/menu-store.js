@@ -1,4 +1,4 @@
-// メニューデータストア (localStorage)
+// メニューデータストア (JSON file + localStorage fallback)
 const MENU_KEY = 'demo_restaurant_menu';
 
 const SEED_MENU = [
@@ -65,7 +65,21 @@ const SEED_MENU = [
 ];
 
 const MenuStore = {
+  _cache: null,
+
+  async init() {
+    try {
+      const res = await fetch('data/menu.json');
+      if (res.ok) {
+        this._cache = await res.json();
+        return;
+      }
+    } catch (e) { /* fetch失敗時はlocalStorageフォールバック */ }
+    this._cache = null;
+  },
+
   _getAll() {
+    if (this._cache) return [...this._cache];
     const raw = localStorage.getItem(MENU_KEY);
     if (!raw) {
       localStorage.setItem(MENU_KEY, JSON.stringify(SEED_MENU));
