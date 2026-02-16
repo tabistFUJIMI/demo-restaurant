@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ふじみDXラボ食堂 | 静岡県富士市の定食屋</title>
+  <meta name="description" content="静岡県富士市の定食屋「ふじみDXラボ食堂」。富士山の麓で育った地元食材を使った、家庭の味をお届けします。ランチ・ディナー営業中。">
+  <link rel="canonical" href="https://example.com/">
+  <!-- OGP -->
+  <meta property="og:title" content="ふじみDXラボ食堂 | 静岡県富士市の定食屋">
+  <meta property="og:description" content="富士山の麓で育った地元食材を使った家庭の味。ランチ・ディナー営業中。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/images/hero-bg.jpg">
+  <meta property="og:site_name" content="ふじみDXラボ食堂">
+  <meta property="og:locale" content="ja_JP">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ふじみDXラボ食堂 | 静岡県富士市の定食屋">
+  <meta name="twitter:description" content="富士山の麓で育った地元食材を使った家庭の味。">
+  <meta name="twitter:image" content="https://example.com/images/hero-bg.jpg">
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/hero-bg.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JSON-LD: Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://example.com/#restaurant",
+    "name": "ふじみDXラボ食堂",
+    "url": "https://example.com/",
+    "image": "https://example.com/images/hero-bg.jpg",
+    "description": "静岡県富士市の定食屋。富士山の麓で育った地元食材を使った、家庭の味をお届けします。",
+    "telephone": "+81-545-00-1111",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "○○町2-3-4",
+      "addressLocality": "富士市",
+      "addressRegion": "静岡県",
+      "postalCode": "416-0000",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.1614,
+      "longitude": 138.6764
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "11:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday"],
+        "opens": "17:00",
+        "closes": "21:00"
+      }
+    ],
+    "priceRange": "¥800〜¥1,200",
+    "servesCuisine": "日本料理",
+    "menu": "https://example.com/#menu",
+    "acceptsReservations": "True",
+    "hasMenu": {
+      "@type": "Menu",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "ランチ",
+          "hasMenuItem": [
+            {"@type": "MenuItem", "name": "日替わり定食", "offers": {"@type": "Offer", "price": "850", "priceCurrency": "JPY"}},
+            {"@type": "MenuItem", "name": "焼き魚定食", "offers": {"@type": "Offer", "price": "950", "priceCurrency": "JPY"}},
+            {"@type": "MenuItem", "name": "生姜焼き定食", "offers": {"@type": "Offer", "price": "900", "priceCurrency": "JPY"}}
+          ]
+        }
+      ]
+    }
+  }
+  </script>
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://example.com/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <span>ふじみDXラボ食堂</span>
+          <p class="logo-sub">地元食材の家庭料理</p>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">ホーム</a></li>
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#kodawari">こだわり</a></li>
+          <li><a href="#shop-info">店舗情報</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="header-tel">
+        <p class="tel-label">ご予約・お問い合わせ</p>
+        <p class="tel-number">0545-00-1111</p>
+        <p class="tel-hours">11:00〜14:00 / 17:00〜21:00</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-bg.jpg');"></div>
+    <div class="hero-content">
+      <span class="hero-badge">本日のおすすめあります</span>
+      <p class="hero-sub">静岡県富士市の定食屋</p>
+      <h1 class="hero-title">富士山の麓で育った食材を、<br>家庭の味で。</h1>
+      <p class="hero-desc">地元の農家さんから届く新鮮な野菜、駿河湾の海の幸。<br>手間ひまかけた家庭料理で、ほっとするひとときをお届けします。</p>
+      <a href="tel:0545001111" class="btn-tel">📞 0545-00-1111</a>
+    </div>
+  </section>
+
+  <!-- お知らせ -->
+  <section class="news" id="news">
+    <div class="container">
+      <p class="section-title-en reveal">News</p>
+      <h2 class="section-title reveal">お知らせ</h2>
+      <ul class="news-list reveal" id="news-list">
+        <!-- JS で動的に挿入 -->
+      </ul>
+      <div class="section-more reveal">
+        <a href="news.html" class="btn-outline">お知らせ一覧を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- メニュー -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <p class="section-title-en reveal">Menu</p>
+      <h2 class="section-title reveal">お品書き</h2>
+      <p class="section-desc reveal">地元食材を活かした、心あたたまる定食をご用意しています。</p>
+      <div id="menu-grid">
+        <!-- JS で動的に挿入 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- こだわり -->
+  <section class="kodawari" id="kodawari">
+    <div class="container">
+      <p class="section-title-en reveal">Commitment</p>
+      <h2 class="section-title reveal">こだわり</h2>
+      <p class="section-desc reveal">おいしい料理のために、大切にしていること。</p>
+      <div class="kodawari-grid">
+        <div class="kodawari-item reveal">
+          <div class="kodawari-icon">🌾</div>
+          <h3>地元食材</h3>
+          <p>富士市・富士宮市の農家さんから直接仕入れた新鮮な野菜を使用。季節ごとに変わる旬の味をお楽しみください。</p>
+        </div>
+        <div class="kodawari-item reveal" data-delay="100">
+          <div class="kodawari-icon">🍳</div>
+          <h3>手づくりの味</h3>
+          <p>出汁は毎朝一番に引き、タレや調味料も自家製。手間ひまかけた「おふくろの味」をお届けします。</p>
+        </div>
+        <div class="kodawari-item reveal" data-delay="200">
+          <div class="kodawari-icon">🍚</div>
+          <h3>ご飯へのこだわり</h3>
+          <p>静岡県産コシヒカリを、注文ごとに炊き立てでご提供。おかわりは無料です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 店舗情報 -->
+  <section class="shop-info" id="shop-info">
+    <div class="container">
+      <p class="section-title-en reveal">Shop Info</p>
+      <h2 class="section-title reveal">店舗情報</h2>
+      <div class="shop-info-grid reveal">
+        <table class="shop-table">
+          <tr><th>店名</th><td>ふじみDXラボ食堂</td></tr>
+          <tr><th>店主</th><td>藤見 花子</td></tr>
+          <tr><th>住所</th><td>〒416-0000 静岡県富士市○○町2-3-4</td></tr>
+          <tr><th>電話番号</th><td><a href="tel:0545001111" style="color:#D2691E;font-weight:700;">0545-00-1111</a></td></tr>
+          <tr><th>営業時間</th><td>ランチ 11:00〜14:00<br>ディナー 17:00〜21:00</td></tr>
+          <tr><th>定休日</th><td>毎週水曜日</td></tr>
+          <tr><th>席数</th><td>カウンター6席、テーブル4卓（16席）</td></tr>
+          <tr><th>駐車場</th><td>5台</td></tr>
+        </table>
+        <div class="shop-interior">
+          <img src="images/interior.jpg" alt="ふじみDXラボ食堂 店内" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-title-en reveal" style="color:rgba(255,255,255,0.5);">Contact</p>
+      <h2 class="section-title section-title-light reveal">お問い合わせ</h2>
+      <p class="contact-desc reveal">ご予約・ご質問はお気軽にどうぞ。</p>
+      <div class="contact-methods reveal">
+        <div class="contact-card">
+          <h3>お電話でのお問い合わせ</h3>
+          <p class="contact-tel"><a href="tel:0545001111" style="color:#fff;">0545-00-1111</a></p>
+          <p class="contact-hours">ランチ 11:00〜14:00 / ディナー 17:00〜21:00</p>
+        </div>
+        <div class="contact-card">
+          <h3>アクセス</h3>
+          <p class="contact-email" style="font-size:14px;">JR富士駅南口より徒歩8分<br>お車でお越しの方：駐車場5台完備</p>
+          <p class="contact-hours">〒416-0000 静岡県富士市○○町2-3-4</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <p class="footer-company">ふじみDXラボ食堂</p>
+          <p class="footer-address">〒416-0000 静岡県富士市○○町2-3-4</p>
+          <p class="footer-tel">TEL: 0545-00-1111</p>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="#news">お知らせ</a></li>
+            <li><a href="#menu">メニュー</a></li>
+            <li><a href="#kodawari">こだわり</a></li>
+            <li><a href="#shop-info">店舗情報</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 ふじみDXラボ食堂 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- モバイル電話フローティングボタン -->
+  <div class="mobile-tel-float">
+    <a href="tel:0545001111" aria-label="電話をかける">📞</a>
+  </div>
+
+  <script src="js/news-store.js" defer></script>
+  <script src="js/menu-store.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
