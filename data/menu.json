@@ -71,5 +71,15 @@
       "大きな海老をまるまる二匹！ボリューム満点"
     ],
     "image": "images/menu/1771254685833-img-1771254656979.webp"
+  },
+  {
+    "id": "mlq06is2e7q3",
+    "status": "published",
+    "createdAt": "2026-02-17T02:47:44.019Z",
+    "updatedAt": "2026-02-17T02:47:44.019Z",
+    "title": "天丼",
+    "name": "天丼",
+    "description": "大きな海老が二尾入った、ボリューム満点の豪華天丼！",
+    "category": "ランチ"
   }
 ]
