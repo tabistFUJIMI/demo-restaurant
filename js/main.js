@@ -74,30 +74,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     }).join('');
   }
 
-  // --- Dynamic Menu (Top page) ---
-  const menuGrid = document.getElementById('menu-grid');
-  if (menuGrid && typeof MenuStore !== 'undefined') {
-    const categories = MenuStore.getCategories();
-    let html = '';
-    categories.forEach(cat => {
-      const items = MenuStore.getPublished().filter(m => m.category === cat);
-      html += `<h3 class="menu-category-title reveal">${cat}</h3>`;
-      html += '<div class="menu-cards">';
-      html += items.map(m => `
-        <div class="menu-card reveal">
-          <div class="menu-card-img">
-            <img src="${m.image}" alt="${m.name}" loading="lazy">
-          </div>
-          <div class="menu-card-body">
-            <h4>${m.name}</h4>
-            <p class="menu-card-desc">${m.description}</p>
-            <p class="menu-card-price">&yen;${m.price.toLocaleString()}</p>
-          </div>
+  // --- Dynamic Menu Preview (Top page: 3件) ---
+  const menuPreview = document.getElementById('menu-preview');
+  if (menuPreview && typeof MenuStore !== 'undefined') {
+    const menus = MenuStore.getPublished().slice(0, 3);
+    menuPreview.innerHTML = menus.map(m => `
+      <div class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="${m.image}" alt="${m.name}" loading="lazy">
         </div>
-      `).join('');
-      html += '</div>';
-    });
-    menuGrid.innerHTML = html;
-    reobserve(menuGrid);
+        <div class="menu-card-body">
+          <h4>${m.name}</h4>
+          <p class="menu-card-desc">${m.description}</p>
+          <p class="menu-card-price">&yen;${m.price.toLocaleString()}</p>
+        </div>
+      </div>
+    `).join('');
+    reobserve(menuPreview);
   }
 });
