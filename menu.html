@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー | ふじみDXラボ食堂</title>
+  <meta name="description" content="ふじみDXラボ食堂のメニュー一覧。ランチ・ディナーの定食メニューをご紹介。地元食材を使った家庭料理。">
+  <link rel="canonical" href="https://example.com/menu.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/menu.html">
+  <meta property="og:title" content="メニュー | ふじみDXラボ食堂">
+  <meta property="og:description" content="ふじみDXラボ食堂のメニュー一覧。ランチ・ディナーの定食メニューをご紹介。">
+  <meta property="og:image" content="https://example.com/images/hero-bg.jpg">
+  <meta property="og:site_name" content="ふじみDXラボ食堂">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="メニュー | ふじみDXラボ食堂">
+  <meta name="twitter:description" content="ふじみDXラボ食堂のメニュー一覧。">
+  <meta name="twitter:image" content="https://example.com/images/hero-bg.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://example.com/" },
+      { "@type": "ListItem", "position": 2, "name": "メニュー", "item": "https://example.com/menu.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <span>ふじみDXラボ食堂</span>
+          <p class="logo-sub">地元食材の家庭料理</p>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="menu.html" class="active">メニュー</a></li>
+          <li><a href="index.html#kodawari">こだわり</a></li>
+          <li><a href="index.html#shop-info">店舗情報</a></li>
+          <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="header-tel">
+        <p class="tel-label">ご予約・お問い合わせ</p>
+        <p class="tel-number">0545-00-1111</p>
+        <p class="tel-hours">11:00〜14:00 / 17:00〜21:00</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-title-en" style="color:rgba(255,255,255,0.5);">Menu</p>
+      <h2>メニュー</h2>
+    </div>
+  </section>
+
+  <section style="padding:60px 0;">
+    <div class="container">
+      <p class="section-desc">地元食材を活かした、心あたたまる定食をご用意しています。</p>
+      <div style="text-align:center;margin-bottom:32px;" id="menu-filter"></div>
+      <div class="content-grid" id="menu-page-grid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <p class="footer-company">ふじみDXラボ食堂</p>
+          <p class="footer-address">〒416-0000 静岡県富士市○○町2-3-4</p>
+          <p class="footer-tel">TEL: 0545-00-1111</p>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="index.html#shop-info">店舗情報</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 ふじみDXラボ食堂 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-tel-float">
+    <a href="tel:0545001111" aria-label="電話をかける">📞</a>
+  </div>
+
+  <style>
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .content-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .content-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .content-card-img {
+      position: relative;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+    .content-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .content-card-category {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--color-primary, #8B4513);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .content-card-body {
+      padding: 20px;
+    }
+    .content-card-body h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    .content-card-body p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+    .content-card-price {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-primary, #8B4513);
+    }
+    .btn-filter {
+      background: none;
+      border: 2px solid var(--color-border, #ddd);
+      color: var(--color-text-light, #666);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      margin: 0 4px 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-filter:hover, .btn-filter.active {
+      border-color: var(--color-primary, #8B4513);
+      color: var(--color-primary, #8B4513);
+      background: rgba(139,69,19,0.05);
+    }
+    @media (max-width: 600px) {
+      .content-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script src="js/menu-store.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await MenuStore.init();
+      const grid = document.getElementById('menu-page-grid');
+      const filterContainer = document.getElementById('menu-filter');
+      const allMenu = MenuStore.getPublished();
+
+      // カテゴリフィルター生成
+      const categories = [...new Set(allMenu.map(m => m.category))];
+      filterContainer.innerHTML = '<button class="btn-filter active" data-filter="all">すべて</button>' +
+        categories.map(c => `<button class="btn-filter" data-filter="${c}">${c}</button>`).join('');
+
+      function render(filter) {
+        const items = filter === 'all' ? allMenu : allMenu.filter(m => m.category === filter);
+        grid.innerHTML = items.map(m => `
+          <div class="content-card">
+            <div class="content-card-img">
+              <img src="${m.image}" alt="${m.name}" loading="lazy">
+              <span class="content-card-category">${m.category}</span>
+            </div>
+            <div class="content-card-body">
+              <h3>${m.name}</h3>
+              <p>${m.description || ''}</p>
+              ${m.price ? `<p class="content-card-price">¥${Number(m.price).toLocaleString()}</p>` : ''}
+            </div>
+          </div>
+        `).join('');
+        if (items.length === 0) {
+          grid.innerHTML = '<p style="color:#999;text-align:center;padding:40px 0;">現在メニューはありません。</p>';
+        }
+      }
+
+      render('all');
+
+      filterContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('btn-filter')) {
+          filterContainer.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+          e.target.classList.add('active');
+          render(e.target.dataset.filter);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
